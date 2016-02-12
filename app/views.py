@@ -12,7 +12,7 @@ def send_mail(mailinfo = {}):
     if mailcc == None:
         cmd = 'echo "%s" | mailx -s "%s" "%s"' %(mailbody, mailsubject, mailto)
     else:
-        #mailcc = ','.join(mailcc)
+        mailcc = ','.join(mailcc)
         cmd = 'echo "%s" | mailx -s "%s" -c "%s" "%s"' %(mailbody, mailsubject, mailcc, mailto)
     print(cmd)
     start = datetime.datetime.now()
