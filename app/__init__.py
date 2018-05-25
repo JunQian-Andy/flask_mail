@@ -1,8 +1,11 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 #encoding = utf-8
 
-from flask import Flask
 
-app = Flask(__name__)
+### http://${hostname}/cntv/stream/api/arcsoft/
+## GET ~/[task_id]
+## post ~/
 
-from app import views
+
+
+

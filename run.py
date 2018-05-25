@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
-#encodin = utf-8
+#!/usr/bin/env python
+#-*- encoding: utf-8 -*-
 
-from app import app
+from app import api
 #app.run(debug=True)
-app.run(host = '0.0.0.0')
+api.app.run(host = '0.0.0.0', debug=True)
